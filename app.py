@@ -33,7 +33,6 @@ def generate_response(prompt):
 interface = gr.Interface(
     fn=generate_response,
     title = "CodePilot: AI Powered Code Assistant",
-    gap = gr.Tab(),
     inputs = gr.Textbox(lines=8, placeholder="Enter your prompt: "),
     outputs="text"
 )

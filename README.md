@@ -34,20 +34,23 @@ Here are some screenshots of the application:
 
 3. **Download Code Llama Model**
 
-   Download the Code Llama model from the [Code Llama GitHub repository](https://github.com/example/code-llama) or the official [Code Llama download page](https://example.com/download). Make sure   to download the appropriate model file for your use case.
+   Download the Code Llama model using Ollama by running the following command.
+   ```bash
+   ollama run codellama
+   ```
 
-4. **Set Up the Model with Ollama**
+5. **Set Up the Model with Ollama**
 
    Use Ollama to create and configure the Code Llama model for your project. Run the following command:
 
    ```bash
-   ollama create -f codePilot
+   ollama create CodePilot -f modelfile
    ```
 
    Ensure that `codePilot` is the name of your configuration file or model setup file. This command will configure Ollama to use the downloaded Code Llama model.
 
 
-5. **Install Dependencies**
+6. **Install Dependencies**
 
    Create a virtual environment and install the required libraries:
 
@@ -57,7 +60,7 @@ Here are some screenshots of the application:
    pip install -r requirements.txt
    ```
 
-6. **Run the Application**
+7. **Run the Application**
 
    Start the Gradio interface with:
 
@@ -65,6 +68,6 @@ Here are some screenshots of the application:
    python app.py
    ```
 
-7. **Access the Application**
+8. **Access the Application**
    
    Open your web browser and navigate to `http://localhost:7860` to start interacting with CodePilot.

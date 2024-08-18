@@ -1,0 +1,6 @@
+pandas
+numpy
+langchain
+gradio
+httpx
+setuptools
